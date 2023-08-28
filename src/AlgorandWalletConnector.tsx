@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { MyAlgoLogo } from './images/MyAlgo-logo';
 import { WalletConnectLogo } from './images/walletconnect-logo';
+import { AlgoSignerLogo } from './images/AlgoSigner';
 import algorandGlobalActions from './redux/algorand/global/globalActions';
 import algorandGlobalSelectors from './redux/algorand/global/globalSelctors';
 import authActions from './redux/auth/authActions';
@@ -114,6 +115,46 @@ export default function AlgorandWalletConnector(props: any) {
 
     walletOptions.push(
       <li key={k}>
+        {/*
+         <div className="sc-eCApGN cjAFRf web3modal-provider-wrapper">
+          <Button
+            minimal={true}
+            style={{
+              color: 'rgb(255 255 255 / 90%)',
+              border: '1px solid rgb(88 91 96)',
+              borderRadius: '12px',
+            }}
+            intent="warning"
+            id={k}
+            large={true}
+            fill={true}
+            className="wallet-btn"
+            outlined={true}
+            disabled
+            onClick={async () => {
+              Pipeline.pipeConnector = 'AlgoSigner';
+              let address = await Pipeline.connect(wallet);
+              window.pipeAddress = address;
+              updateWallet(address);
+              dispatch(
+                algorandGlobalActions.doPipeConnectChange({
+                  ...getCurrentGlobalPipeState(globalPipeState),
+                  myAddress: address,
+                  provider: 'AlgoSigner',
+                }),
+              );
+            }}
+          >
+            <div className="wallet-option">
+              <AlgoSignerLogo></AlgoSignerLogo>
+              <h3 className="wallet-con bktcUM">AlgoSigner</h3>
+              <div className="sc-dlnjPT eFHlqH web3modal-provider-description">
+                Launch AlgoSigner to connect
+              </div>
+            </div>
+          </Button>
+          </div>*/}
+        {/*
         <div className="sc-eCApGN cjAFRf web3modal-provider-wrapper">
           <Button
             minimal={true}
@@ -128,6 +169,7 @@ export default function AlgorandWalletConnector(props: any) {
             fill={true}
             className="wallet-btn"
             outlined={true}
+            disabled
             onClick={async () => {
               Pipeline.pipeConnector = 'WalletConnect';
               let address = await Pipeline.connect(wallet);
@@ -150,7 +192,7 @@ export default function AlgorandWalletConnector(props: any) {
               </div>
             </div>
           </Button>
-        </div>
+          </div>*/}
         <div className="sc-eCApGN cjAFRf web3modal-provider-wrapper">
           <Button
             id={k}
