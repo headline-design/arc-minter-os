@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "baseUrl": "src",
+    "outDir": "dist",
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "dom",
+      "es2015",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "jsx": "react-jsx",
+    "checkJs": false,
+    "noImplicitThis": false,
+    "alwaysStrict": false,
+    "strictBindCallApply": false,
+    "strictFunctionTypes": false,
+    "strictPropertyInitialization": false,
+    "noImplicitReturns": false,
+    "noImplicitAny": false,
+    "noImplicitUseStrict": false,
+     "strictNullChecks": false,
+     "strict": false,
+    "noImplicitOverride": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": false,
+     "noFallthroughCasesInSwitch": true,
+     "module": "esnext",
+     "noEmit": true,
+      "experimentalDecorators": false,
+      "emitDecoratorMetadata": false,
+      "skipDefaultLibCheck": true,
+      "sourceMap": false,
+      "noUnusedLocals": false,
+      "noUnusedParameters": false,
+      "allowUnreachableCode": false,
+      "allowUnusedLabels": true,
+
+
+  },
+  "include": [
+    "src",
+    "lib",
+    "index.d.ts",
+    "dist"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
